@@ -1,0 +1,222 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+ul {
+  list-style: none;
+}
+img {
+  height: 250px;
+}
+header,
+footer {
+  background-color: blanchedalmond;
+}
+header,
+footer,
+main {
+  padding: 0.5rem 3rem;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header ul {
+  display: flex;
+}
+header ul a {
+  padding: 0 0.25rem;
+  margin: 0 0.25rem;
+}
+header ul a.active {
+  color: #000;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+header ul a.active,
+header ul a.active span {
+  font-weight: 900;
+}
+.page {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.page p {
+  margin-bottom: 1rem;
+}
+#products {
+  width: 90%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.product {
+  width: 21%;
+  margin: 20px 10px;
+  height: 350px;
+  
+}
+.cartqty button {
+  width: 28px;
+  height: 28px;
+}
+
+.product img {
+  width: 80%;
+  height: 200px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+.product h3 {
+  font-size: 1rem;
+}
+.product h3,
+.product p {
+  margin-bottom: 0.5rem;
+}
+.product p {
+  display: flex;
+  align-items: center;
+}
+
+.product a {
+  height: 41px;
+  width: 110px;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  padding-top: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+.product .addToCart,
+.singleProduct .addToCart {
+  border: 2px solid #155f15;
+  background-color: #155f15;
+  padding: 6px 15px;
+  border-radius: 10px;
+  color: blanchedalmond;
+  transition: all 350ms;
+}
+.product .addToCart:hover,
+.singleProduct .addToCart:hover {
+  background-color: #fff;
+  color: #155f15;
+}
+
+.singleProduct {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem auto;
+}
+.singleProduct .left {
+  width: 25%;
+}
+.singleProduct .left img {
+  width: 60%;
+}
+.singleProduct .right {
+  width: 75%;
+}
+
+.miniCart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 0.5rem;
+}
+.cartQuantity {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+.cartQuantity button,
+.cartQuantity p {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.cartQuantity button {
+  font-size: 1rem;
+}
+.cartQuantity p {
+  margin-bottom: 0;
+  background-color: rgb(240, 240, 240);
+}
+.removeFromCart {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 400ms;
+}
+.removeFromCart:hover {
+  transform: scale(1.1);
+}
+
+.cart, .cart .contents .cartItem{
+  display: flex;
+  gap: 2rem;
+}
+.cart .contents{
+  width: 60%;
+}
+.cart .total{
+  width: 40%;
+}
+.cart .contents .cartItem{
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.cart .contents .cartItem .left{
+  width: 30%;
+}
+.cart .contents .cartItem .right{
+  width: 40%;
+}
+.cart .contents .cartItem .left img{
+  width: 50%;
+  max-width: 200px;
+  object-fit: contain;
+}
+
+
+
+.contact-form {
+  width: 500px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  border: 1px solid #c1c1c1;
+  border-radius: 5px;
+  padding: 6px 10px;
+}
+footer {
+  text-align: center;
+}
